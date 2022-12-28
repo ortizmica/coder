@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
-        <h1>Antares</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./NuestrasCervezas.html">Nuestras Cervezas</a></li>
-                <li><a href="./LaFabrica.html">La Fabrica</a></li>
-                <li><a href="./Nosotros.html">Nosotros</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/salud.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/NuestrasCervezas.html">Nuestras
+                                Cervezas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/LaFabrica.html">La Fabrica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -44,33 +70,39 @@
                 </p>
             </section>
             <section class="form">
-                <form action="" method="" enctype="">
-                    <div>
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" id="nombre">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputEmail4">
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="inputPassword4">
                     </div>
-                    <div>
-                        <label for="telefono">Telefono</label>
-                        <input type="text" id="telefono">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputAddress">
                     </div>
-                    <div>
-                        <h3>Motivo de la consulta</h3>
-                        <select name="motivo" id="motivo">
-                            <option value="">Seleccione</option>
-                            <option value="">Ventas</option>
-                            <option value="">Franquicias</option>
-                            <option value="">Recursos humanos</option>
-                            <option value="">Atencion al cliente</option>
-                            <option value="">Reserva visitas a fabrica</option>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputCity" class="form-label">Mensaje</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Motivo de la consulta</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccione</option>
+                            <option>Ventas</option>
+                            <option>Franquicias</option>
+                            <option>Atencion al cliente</option>
+                            <option>Reserva visitas a la Fabrica</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                        <input type="text" id="mensaje">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                 </form>
             </section>
@@ -78,9 +110,15 @@
     </main>
     <footer>
         <div class="footer">
-            <a href="https://www.facebook.com/cerveceriaantaresoficial/" target="_blank"><img src="../img/facebook.png" alt="logo de facebook"></a>
-            <a href="https://www.instagram.com/cerveceriaantares/?__coig_restricted=1" target="_blank"><img src="../img/instagram.png" alt="logo de instagram"></a>
+            <a href="https://www.facebook.com/cerveceriaantaresoficial/" target="_blank"><img src="../img/facebook.png"
+                    alt="logo de facebook"></a>
+            <a href="https://www.instagram.com/cerveceriaantares/?__coig_restricted=1" target="_blank"><img
+                    src="../img/instagram.png" alt="logo de instagram"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
