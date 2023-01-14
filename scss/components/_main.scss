@@ -1,0 +1,244 @@
+/*INDEX*/
+.index{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    div{
+        border: 1px black solid;
+        height: 300px;
+        box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.46);
+        -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.46);
+        -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.46);
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            color: white;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.185);
+        }
+        a{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+/*NUESTRAS CERVEZAS*/
+.cervezas-contenedor{
+    border: solid 1px rgba(0, 0, 0, 0.295);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 30px;
+    margin-left: 0;
+    box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        &.cervezas-contenedor:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+    img{
+        width: 300px;
+        height: 100%;
+        object-fit: cover;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            text-align: center; 
+        }
+        ul{
+            list-style: none;
+            li{
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+}
+
+/*LA FABRICA*/
+.fabrica{
+    .fabrica-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        border: solid 1px rgba(0, 0, 0, 0.384);
+        box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+        }
+        ul{
+            list-style: none;
+            li{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 200;
+            }
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .fabrica-contenido{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 450px;
+        gap: 15px;
+        margin: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        iframe{
+        }
+    }
+}
+
+/**NOSOTROS*/
+.nosotros{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div{
+        width: 49%;
+        padding: 40px;
+        text-align: center; 
+        margin: 15px;
+        box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+        }
+    }
+}
+.nosotros2{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    flex-direction: column;
+    margin: 15px;
+    box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    div{
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            margin: 15px;
+        }
+    }
+    div{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            li{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 200;
+                margin: 15px;
+            }
+        }
+    }
+}
+.galeria{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .galeria-5{
+        grid-row: span 2;
+    }
+    .galeria-7{
+        grid-row: span 2;
+    }
+    .galeria-6{
+    }
+}
+
+/*CONTACTO*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .info{
+        border: solid 1px rgba(0, 0, 0, 0.534);
+        box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+        margin: 30px;
+        text-align: center;
+        width: 80%;
+        h2{
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            margin: 15px;
+        }
+        p{
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            margin: 15px;
+        }
+    }
+}
+.form{
+    border: solid 1px rgba(0, 0, 0, 0.534);
+    box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
+    margin: 30px;
+    width: 70%;
+    padding: 15px;
+}

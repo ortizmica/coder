@@ -59,7 +59,7 @@ header nav div img{
     -webkit-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
     -moz-box-shadow: 14px 14px 2px -2px rgba(0,0,0,0.24);
 }
-.reverse{
+.cervezas-contenedor:nth-child(odd){
     flex-direction: row-reverse;
 }
 .cervezas-contenedor div{
@@ -245,7 +245,6 @@ header nav div img{
 }
 
 /*FOOTER*/
-
 footer{
     background-color: rgba(14, 12, 12, 0.575);
     display: flex;
@@ -260,6 +259,7 @@ footer{
 .footer img:hover{
     transform: scale(1.2);
 }
+
 /*MEDIA QUERY*/
 @media screen and (max-width: 950px){
     header{
@@ -330,6 +330,10 @@ footer{
         width: 100%;
         height: 300px;
     }
+    .fabrica div iframe{
+        width: 400px;
+        height: 400px;
+    }
 }
 @media screen and (max-width:570px){
     .galeria{
@@ -344,5 +348,9 @@ footer{
     }
     .galeria-6{
         grid-column: span 1;
+    }
+    .fabrica div iframe{
+        width: 300px;
+        height: 300px;
     }
 }

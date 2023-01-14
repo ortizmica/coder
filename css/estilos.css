@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,200;0,400;0,800;1,600 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*HEADER*/
+header nav div a img {
+  width: 100px;
+  height: 100px; }
+
+/*INDEX*/
+.index {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+  .index div {
+    border: 1px black solid;
+    height: 300px;
+    box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.46); }
+    .index div h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      color: white;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.185); }
+    .index div a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+/*NUESTRAS CERVEZAS*/
+.cervezas-contenedor {
+  border: solid 1px rgba(0, 0, 0, 0.295);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 30px;
+  margin-left: 0;
+  box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24); }
+  .cervezas-contenedor.cervezas-contenedor:nth-child(odd) {
+    flex-direction: row-reverse; }
+  .cervezas-contenedor img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover; }
+  .cervezas-contenedor div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .cervezas-contenedor div h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600; }
+    .cervezas-contenedor div h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400; }
+    .cervezas-contenedor div p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      text-align: center; }
+    .cervezas-contenedor div ul {
+      list-style: none; }
+      .cervezas-contenedor div ul li {
+        font-family: 'Montserrat', sans-serif; }
+
+/*LA FABRICA*/
+.fabrica .fabrica-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  border: solid 1px rgba(0, 0, 0, 0.384);
+  box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24); }
+  .fabrica .fabrica-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; }
+  .fabrica .fabrica-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200; }
+  .fabrica .fabrica-text ul {
+    list-style: none; }
+    .fabrica .fabrica-text ul li {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200; }
+  .fabrica .fabrica-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; }
+  .fabrica .fabrica-text p {
+    font-family: 'Montserrat', sans-serif; }
+
+.fabrica .fabrica-contenido {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 450px;
+  gap: 15px;
+  margin: 20px; }
+  .fabrica .fabrica-contenido img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+/**NOSOTROS*/
+.nosotros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .nosotros div {
+    width: 49%;
+    padding: 40px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24); }
+    .nosotros div h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600; }
+    .nosotros div p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200; }
+
+.nosotros2 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  flex-direction: column;
+  margin: 15px;
+  box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24); }
+  .nosotros2 div h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; }
+  .nosotros2 div p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin: 15px; }
+  .nosotros2 div ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    .nosotros2 div ul li {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      margin: 15px; }
+
+.galeria {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .galeria-5 {
+    grid-row: span 2; }
+  .galeria .galeria-7 {
+    grid-row: span 2; }
+
+/*CONTACTO*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .contacto .info {
+    border: solid 1px rgba(0, 0, 0, 0.534);
+    box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+    margin: 30px;
+    text-align: center;
+    width: 80%; }
+    .contacto .info h2 {
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      margin: 15px; }
+    .contacto .info p {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      margin: 15px; }
+
+.form {
+  border: solid 1px rgba(0, 0, 0, 0.534);
+  box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
+  margin: 30px;
+  width: 70%;
+  padding: 15px; }
+
+/*FOOTER*/
+footer {
+  background-color: rgba(14, 12, 12, 0.575);
+  display: flex;
+  justify-content: center; }
+  footer div a img {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    transition: 0.6s; }
+    footer div a img:hover {
+      transform: scale(1.2); }
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 950px) {
+  header {
+    flex-direction: column; }
+  .index {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .fabrica .fabrica-contenido {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 720px) {
+  header nav ul li {
+    margin: 10px;
+    font-size: 400; }
+  .cervezas-contenedor img {
+    width: 250px;
+    height: 100%; }
+  .nosotros {
+    flex-direction: column; }
+  .nosotros div {
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    margin: 15px; }
+  .nosotros2 div ul {
+    flex-direction: column; }
+  .galeria {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .galeria .galeria-6 {
+    grid-column: span 2; } }
+
+@media screen and (max-width: 610px) {
+  header nav ul {
+    text-align: center;
+    margin: 10px;
+    font-size: 400;
+    flex-direction: column; }
+  .index {
+    grid-template-columns: 1fr; }
+  .cervezas-contenedor {
+    flex-direction: column; }
+  .cervezas-contenedor img {
+    width: 100%;
+    height: 300px; }
+  .fabrica div iframe {
+    width: 400px;
+    height: 400px; } }
+
+@media screen and (max-width: 570px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px; }
+  .galeria .galeria-5 {
+    grid-row: span 1; }
+  .galeria .galeria-7 {
+    grid-row: span 1; }
+  .galeria .galeria-6 {
+    grid-column: span 1; }
+  .fabrica div iframe {
+    width: 300px;
+    height: 300px; } }
