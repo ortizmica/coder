@@ -19,11 +19,8 @@ header nav div a img {
   margin-top: 10px;
   margin-bottom: 20px; }
   .index div {
-    border: 1px black solid;
-    height: 300px;
-    box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.46);
-    -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.46);
-    -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.46); }
+    border: 3px rgba(0, 0, 0, 0.521) solid;
+    height: 300px; }
     .index div h3 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 200;
@@ -36,7 +33,7 @@ header nav div a img {
       object-fit: cover; }
 
 /*NUESTRAS CERVEZAS*/
-.cervezas-contenedor {
+.cerve-contenedor {
   border: solid 1px rgba(0, 0, 0, 0.295);
   display: flex;
   width: 100%;
@@ -46,30 +43,30 @@ header nav div a img {
   box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 14px 14px 2px -2px rgba(0, 0, 0, 0.24); }
-  .cervezas-contenedor.cervezas-contenedor:nth-child(odd) {
+  .cerve-contenedor.cerve-contenedor:nth-child(odd) {
     flex-direction: row-reverse; }
-  .cervezas-contenedor img {
+  .cerve-contenedor img {
     width: 300px;
     height: 100%;
     object-fit: cover; }
-  .cervezas-contenedor div {
+  .cerve-contenedor div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .cervezas-contenedor div h2 {
+    .cerve-contenedor div h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 600; }
-    .cervezas-contenedor div h3 {
+    .cerve-contenedor div h3 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400; }
-    .cervezas-contenedor div p {
+    .cerve-contenedor div p {
       font-family: 'Montserrat', sans-serif;
       font-weight: 200;
       text-align: center; }
-    .cervezas-contenedor div ul {
+    .cerve-contenedor div ul {
       list-style: none; }
-      .cervezas-contenedor div ul li {
+      .cerve-contenedor div ul li {
         font-family: 'Montserrat', sans-serif; }
 
 /*LA FABRICA*/
@@ -239,7 +236,7 @@ footer {
   header nav ul li {
     margin: 10px;
     font-size: 400; }
-  .cervezas-contenedor img {
+  .cerve-contenedor img {
     width: 250px;
     height: 100%; }
   .nosotros {
@@ -271,9 +268,83 @@ footer {
     flex-direction: column; }
   .index {
     grid-template-columns: 1fr; }
-  .cervezas-contenedor {
+  .cerve-contenedor {
     flex-direction: column; }
-  .cervezas-contenedor img {
+  .cerve-contenedor img {
+    width: 100%;
+    height: 300px; }
+  .fabrica div iframe {
+    width: 400px;
+    height: 400px; } }
+
+@media screen and (max-width: 570px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px; }
+  .galeria .galeria-5 {
+    grid-row: span 1; }
+  .galeria .galeria-7 {
+    grid-row: span 1; }
+  .galeria .galeria-6 {
+    grid-column: span 1; }
+  .fabrica div iframe {
+    width: 300px;
+    height: 300px; } }
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 950px) {
+  header {
+    flex-direction: column; }
+  .index {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .fabrica .fabrica-contenido {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 720px) {
+  header nav ul li {
+    margin: 10px;
+    font-size: 400; }
+  .cerve-contenedor img {
+    width: 250px;
+    height: 100%; }
+  .nosotros {
+    flex-direction: column; }
+  .nosotros div {
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    margin: 15px; }
+  .nosotros2 div ul {
+    flex-direction: column; }
+  .galeria {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .galeria .galeria-6 {
+    grid-column: span 2; } }
+
+@media screen and (max-width: 610px) {
+  header nav ul {
+    text-align: center;
+    margin: 10px;
+    font-size: 400;
+    flex-direction: column; }
+  .index {
+    grid-template-columns: 1fr; }
+  .cerve-contenedor {
+    flex-direction: column; }
+  .cerve-contenedor img {
     width: 100%;
     height: 300px; }
   .fabrica div iframe {
