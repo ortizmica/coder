@@ -3,4 +3,11 @@ black,
 white,
 rgba(0, 0, 0, 0.295),
 rgba(14, 12, 12, 0.575),
-grey,
+grey;
+
+%flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
